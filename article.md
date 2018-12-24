@@ -7,7 +7,7 @@
 [视音频编解码学习工程：FLV封装格式分析器](https://blog.csdn.net/leixiaohua1020/article/details/17934487)  
 [一张图看懂FLV文件格式](https://blog.ibaoger.com/2017/06/04/flv-file-format/)
 
-[本帖示例工程]()里有一个 example.flv
+[本帖示例工程](https://github.com/sanlengjingvv/media-info.js)里有一个 example.flv
 用二进制表示`xxd -b example.flv`
 第一个字节是`01000110`，表示为 8 位 unsigned int 是 `70`，在 [ASCII](http://www.asciitable.com/) 中代表字符 `F`。
 第二个字节是`01000110`，表示为 8 位 unsigned int 是 `76`，在 [ASCII](http://www.asciitable.com/) 中代表字符 `L`。

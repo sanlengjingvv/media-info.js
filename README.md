@@ -1,4 +1,4 @@
-# 用 JavaScript  FLV 信息
+# 用 JavaScript 获取 FLV 信息
 
 示例代码在 Mac Chrome 70 上执行
 
@@ -10,7 +10,7 @@
 [Action Message Format](https://www.adobe.com/content/dam/acom/en/devnet/pdf/amf0-file-format-specification.pdf)
 
 ### JavaScript 操作二进制数据的
-[ArrayBuffer 教程](http://es6.ruanyifeng.com/#docs/arraybuffer)  
+[ArrayBuffer 教程](http://es6.ruanyifeng.com/#docs/arraybuffer)  
 
 ### 用MediaInfo 查看视频信息
 ```
