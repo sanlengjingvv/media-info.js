@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>media-info.js</title>
+</head>
+
+<body>
+    <input id='videosrc' type="text" placeholder="请输入flv地址" value="http://127.0.0.1:9999/example.flv">
+    <input id='btn_run' type="button" value="Run">
+    <script type="text/javascript" src="./js/media-info.js"></script>
+    <script>
+        const btn_run = document.querySelector("#btn_run")
+        btn_run.addEventListener("click", () => {
+            req = new Request(document.querySelector("#videosrc").value, {
+                method: 'GET'
+            })
+
+            fetch(req).then(response => {
+                const reader = response.body.getReader()
+                reader.read().then(result =>  {
+                    const chunk = result.value
+                    parse(chunk)
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
